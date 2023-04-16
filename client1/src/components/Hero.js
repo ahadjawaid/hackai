@@ -9,23 +9,28 @@ const containerStyle = {
     paddingTop: '5rem'
 }
 
-
 const title = {
-    text: "Read on the fly free up your time",
+    text: "Read on the fly, free up your time",
     weight: "700",
     size: "2rem",
     pb: "1rem",
+    style: {
+        backgroundImage: 'linear-gradient(to bottom, #b44747, #ffab00)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+  },
 }
 
 const description = {
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+    text: "Experience the freedom of learning on-the-go: Let Bookify turn your favorite books and research papers into easy-to-listen audio formats",
     weight: "400",
     size: "1rem",
     pb: "1rem",
+    color: "#161b22",
 }
 
 const image = {
-    path: "logo192.png",
+    path: "open-book.png",
     style: {
         height: "15rem",
     }
@@ -36,23 +41,23 @@ const button = {
     href: "https://github.com/ahadjawaid/eco/tree/main/client/src",
     size: "small",
     style: {
-        color: "#fff",
-        backgroundColor: "#0063cc"
+        color: "#e6f9ff",
+        backgroundColor: "#e68917"
     }
 }
 
 function Hero() {
     return (
-        <Box sx={containerStyle}>
+        <Box sx={containerStyle} paddingBottom="5rem">
             <Box sx={{ maxWidth: "55%" }}>
-                <Typography paddingBottom={title.pb} fontSize={title.size} fontWeight={title.weight}>
+                <Typography sx={title.style} paddingBottom={title.pb} fontSize={title.size} fontWeight={title.weight}>
                     {title.text}
                 </Typography>
-                <Typography paddingBottom={description.pb} fontSize={description.size} 
+                <Typography color={description.color} paddingBottom={description.pb} fontSize={description.size} 
                 fontWeight={description.weight}>{
                     description.text}
                 </Typography> 
-                <Button variant="contained"  size={button.size} href={button.href} sx={button.style}>
+                <Button className="button-hover" variant="contained" color={button.color} size={button.size} href={button.href} sx={button.style}>
                     {button.text}
                 </Button>
             </Box>
