@@ -1,0 +1,7 @@
+flask
+boto3
+librosa
+PyPDF2
+fastai
+arxiv
+pydub

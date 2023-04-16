@@ -4,5 +4,5 @@ body{
   box-sizing: border-box;
   font-family: "Roboto";
   /*background-color: #d2b48c;*/
-  background: linear-gradient(to right, #f3d0a1 23%, #85684c 95%);
+  background-color: #f3d0a1;
 }
