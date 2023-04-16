@@ -5,7 +5,8 @@ const containerStyle = {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-around"
+    justifyContent: "space-around",
+    paddingTop: '5rem'
 }
 
 
@@ -24,7 +25,7 @@ const description = {
 }
 
 const image = {
-    path: "logo512.png",
+    path: "logo192.png",
     style: {
         height: "15rem",
     }
@@ -50,13 +51,13 @@ function Hero() {
                 <Typography paddingBottom={description.pb} fontSize={description.size} 
                 fontWeight={description.weight}>{
                     description.text}
-                </Typography>
-                <Button variant="contained" size={button.size} href={button.href} sx={button.style}>
+                </Typography> 
+                <Button variant="contained"  size={button.size} href={button.href} sx={button.style}>
                     {button.text}
                 </Button>
             </Box>
             <Box>
-                <img style={image.style} src={image.path} />
+                <img style={image.style}  src={image.path} />
             </Box>
         </Box>
     );

@@ -1,7 +1,8 @@
-.index {
+body{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto";
-  background-color: "#0c162d";
+  /*background-color: #d2b48c;*/
+  background: linear-gradient(to right, #f3d0a1 23%, #85684c 95%);
 }
