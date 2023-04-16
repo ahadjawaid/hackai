@@ -42,8 +42,9 @@ function Demo() {
     .then(books => {
       setBooks(books); // update the state variable with the first three search results
       setSelectedBook(''); // clear the selected book when the search results change
+      setAudioUrl(''); // clear the audio url when the search results change
     })
-   .catch(error => {
+    .catch(error => {
       console.error(error);
     });
   }
@@ -74,6 +75,7 @@ function Demo() {
       .catch(error => {
         console.error(error);
       });
+      
   }
   
     return (
@@ -109,7 +111,7 @@ function Demo() {
                           {button.text}
                       </Button>
                     )}
-
+                  
                     {audioUrl && (
                         <audio controls src={audioUrl}></audio>
                     )}
