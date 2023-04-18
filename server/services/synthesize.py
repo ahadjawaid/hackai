@@ -10,7 +10,7 @@ def get_text_within_limit(lines, char_limit):
     text = " ".join(lines)
     return text[:char_limit]
 
-def synthesize_speech(text, voice_id='Arthur', language_code='en-GB', output_format='mp3',
+def synthesize_speech_amzn(text, voice_id='Arthur', language_code='en-GB', output_format='mp3',
                       engine="neural", sr=22050):
     polly_client = boto3.client('polly')
 

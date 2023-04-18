@@ -38,11 +38,15 @@ const image = {
 
 const button = {
     text: "Try it now!",
-    href: "https://github.com/ahadjawaid/eco/tree/main/client/src",
+    href: "#demo",
     size: "small",
     style: {
+        textTransform: 'capitalize',
         color: "#e6f9ff",
-        backgroundColor: "#e68917"
+        backgroundColor: "#e68917",
+        ":hover": {
+            backgroundColor: "#bc523e"
+        }
     }
 }
 
